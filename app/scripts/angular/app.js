@@ -10,5 +10,5 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/test2',{templateUrl: 'views/tpl/test2.html', controller:'Test2Ctrl'})
         .otherwise({redirectTo: '/'});
 
-    $locationProvider.html5Mode({enabled: true, requireBase: false});
+    $locationProvider.hashPrefix('!');
 }]);
