@@ -2,10 +2,15 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <base href="/test/"/>
     <title>Angular-basic</title>
+    <!-- build:app-css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:third-css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <!-- endbuild -->
 </head>
 <body ng-app="app" ng-controller="RootCtrl">
 
@@ -18,16 +23,19 @@
 </ul>
 
 <div ng-view></div>
-
+<!-- build:third-js -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
+<!-- endbuild -->
+<!-- build:app-js -->
 <script src="scripts/angular/app.js"></script>
 <script src="scripts/angular/controllers.js"></script>
 <script src="scripts/angular/rootCtrl.js"></script>
 <script src="scripts/angular/welcomeCtrl.js"></script>
 <script src="scripts/angular/test1Ctrl.js"></script>
 <script src="scripts/angular/test2Ctrl.js"></script>
+<!-- endbuild -->
 </body>
 </html>
